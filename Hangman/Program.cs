@@ -1,4 +1,6 @@
 ﻿using System;
+using Hangman.Words;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Hangman
 {
@@ -6,9 +8,14 @@ namespace Hangman
   {
     static void Main(string[] args)
     {
-      Console.WriteLine("Hello World 2!");
+      //var serviceProvider = new ServiceCollection()
+      //  .AddScoped<IWords, StaticWords>()
+      //  .BuildServiceProvider();
 
-      Console.Read();
+      var game = new Game.Game();
+      game.RunGame(new StaticWords());
+
+      //serviceProvider.Dispose();
     }
   }
 }

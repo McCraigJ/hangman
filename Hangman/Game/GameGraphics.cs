@@ -28,6 +28,7 @@ namespace Hangman.Game
           Console.WriteLine("/  ");
           break;
         case 5:
+          Console.WriteLine("  |");
           Console.WriteLine(" x|");
           Console.WriteLine("< >");
           Console.WriteLine("/ \\");

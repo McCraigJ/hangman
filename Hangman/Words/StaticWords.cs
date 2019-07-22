@@ -12,7 +12,10 @@ namespace Hangman.Words
       {
         "banana",
         "apple",
-        "orange"
+        "orange",
+        "mango",
+        "passionfruit",
+        "pineapple"
       };
     }
   }
